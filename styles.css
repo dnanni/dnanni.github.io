@@ -1,3 +1,42 @@
-body{
+.name {
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+}
+
+.links {
 	
 }
+
+a {
+	color: black;
+	underline: none;
+		
+}
+
+a:hover {
+	color: orange;
+}
+
+.ref {
+	position: absolute;
+	font-size: 10px;
+	bottom: 2%;
+}
+
+body {
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.all {
+	margin-left: 5%;
+	margin-top: 5%;
+/* 	border: 2px solid black;
+	border-radius: 8px; */
+	width: 330px;
+	height: 150px;
+	padding: 15px;
+	
+}
+
