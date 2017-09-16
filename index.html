@@ -2,22 +2,52 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Daniel Nanni</title>
+<title>Daniel Nanni's Homepage</title>
  <link rel="stylesheet" type="text/css" href="styles.css">
- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"> 
 </head>
 <body>
-<div class="all">
-	<span class="name">Daniel Nanni</span>
-	<p>This is my homepage! Work in progress.</p>
-	<div class="links"> 
-		<a href="https://www.linkedin.com/in/daniel-nanni-4503a8120/">LinkedIn</a> 
-		<a href="https://github.com/dnanni">GitHub</a>
+
+<div id="bg">
+    <img src="background.jpg">
+    
+    <div id="intro">
+		<span class="name">Daniel Nanni</span>
+		<p>This is my homepage! Work in progress.</p>
+		<div class="links"> 
+			<a href="https://www.linkedin.com/in/daniel-nanni-4503a8120/">LinkedIn</a> 
+			<a href="https://github.com/dnanni">GitHub</a>
+		</div>
 	</div>
-	
-
-
 </div>
+
+
+
+<div id="loading"><div class="loader"></div></div>
+
+
+<script>
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('intro', true);
+    show('loading', false);
+});
+
+</script>
 
 </body>
 </html>
