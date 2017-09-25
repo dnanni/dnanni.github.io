@@ -4,15 +4,6 @@
 	color: white;
 }
 
-.links {
-	
-}
-
-a {
-	color: white;
-	underline: none;
-}
-
 a:hover {
 	color: orange;
 }
@@ -26,17 +17,15 @@ img{
     z-index:-4;
 }
 
-
 #intro {
-	position: absolute;
+	margin: 0 auto;
 	display: none;
-	width: 900px;
-	height: 150px;
-	top: 100px;
-	left: 100px;
+	width: 25%;
+	height: 300px;
+	margin-top: 20%;
 }
 
-p{
+#wip{
   color: white; 
   font-size: 20px;
   white-space: nowrap;
@@ -52,7 +41,6 @@ p a{
 
 @keyframes fade{ 
   0%{color: #ffff00;}
-  33% {color: green;}
   66% {color: red;}
   100% {color: #ffff00;}
 } 
@@ -62,7 +50,9 @@ p a{
 } 
 
 #loading {
-    display: block;
+	display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -75,23 +65,45 @@ p a{
 }
 
 .loader {
+	max-width: 50%;
 	background-color: whitesmoke;
     border-radius: 100%;
     width: 90px;
     height: 93px;
-    animation: spin 1s linear infinite;
+    animation: load 1s linear infinite;
     margin: 0 auto;
-    margin-top: 20%;
 }
 
 
-@keyframes spin {
+@keyframes load {
     50% { background: gray;
     width: 120px;
     height: 20px;}
     75% {background: gray;}
     100% { transform: rotate(360deg);}
 }
+
+
+html { 
+  background: url(background.jpg) no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* body{
+	animation: change 5s linear infinite;
+    -moz-animation: change 5s linear infinite;
+    -webkit-animation: change 5s linear infinite;
+    -o-animation: change 5s linear infinite;
+}
+
+@keyframes change {
+    0% { background-color: green; }
+    50% { background-color: red; }
+    100% { background-color: blue;}
+} */
 
 
 
