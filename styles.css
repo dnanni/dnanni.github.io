@@ -24,9 +24,9 @@ i:hover {
 	transition: all .6s ease;
 	opacity: .8;
 	color: #00e600;
-	-webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 i:not( :hover ){ 
@@ -99,10 +99,10 @@ i:not( :hover ){
 }
 
 @keyframes load {
-    50% { background: gray;
+    50% { background: #00cc7a;
     width: 120px;
     height: 20px;}
-    75% {background: gray;}
+    75% {background: #1a75ff;}
     100% { transform: rotate(360deg);}
 }
 
@@ -111,47 +111,47 @@ body {
 	height: 50vh;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	background: linear-gradient(45deg, blue, #229173, blue, #229173, blue);
-	background-size: 600% 600%;
-	-webkit-animation: gradient 14s ease infinite;
-	-moz-animation: gradient 14s ease infinite;
-	animation: gradient 14s ease infinite;
+	background: linear-gradient(45deg, #00cc7a, #1a75ff, #00cc7a);
+	background-size: 500% 500%;
+	-webkit-animation: gradient 18s ease-in-out infinite;
+	-moz-animation: gradient 18s ease-in-out infinite;
+	animation: gradient 18s ease-in-out infinite;
 }
 
 @-webkit-keyframes gradient {
 	0% {
-		background-position: 0% 0%
+		background-position: 0% 50%
 	}
 	50% {
-		background-position: 70% 0%
+		background-position: 100% 50%
 	}
 	100% {
-		background-position: 0% 0%
+		background-position: 0% 50%
 	}
 	
 }
 
 @-moz-keyframes gradient {
 	0% {
-		background-position: 0% 0%
+		background-position: 0% 50%
 	}
 	50% {
-		background-position: 70% 0%
+		background-position: 100% 50%
 	}
 	100% {
-		background-position: 0% 0%
+		background-position: 0% 50%
 	}
 }
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 0%
+		background-position: 0% 50%
 	}
 	50% {
-		background-position: 70% 0%
+		background-position: 100% 50%
 	}
 	100% {
-		background-position: 0% 0%
+		background-position: 0% 50%
 	}
 
 }
