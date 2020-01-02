@@ -1,7 +1,9 @@
 .name {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 60px;
+	font-size: 80px;
 	color: white;
+	position: relative;
+	top: -15px;
 }
 
 a{
@@ -12,12 +14,15 @@ a{
 }
 
 .name:hover{
-	animation: change 2s infinite; 
+	transition: all .6s ease;
+	opacity: .8;
+	color: #00e600;
 }
 
 .name:not( :hover ){ 
 	transition: all .6s ease;
 	opacity: 1;
+	color: whitesmoke;
 }
 
 i:hover {
@@ -41,29 +46,27 @@ i:not( :hover ){
 #wrap {
 	margin: 0 auto;
 	display: none;
-	width: 65%;
-	min-width: 230px;
-	height: 60vh;
-	margin-top: 19%;
 	text-align: center;
+	height: 100vh;
+	margin-top: 25vh;
 }
 
 .links{
 	position: relative;
-	margin-top: 7vh;
+	margin-top: 4vh;
 	content: center;
 }
 
+#z {
+	margin-top: 10vh;
+}
+
 #wip{
-  color: white; 
-  font-size: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: change 2s infinite; 
+  color: greenyellow;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 24px;
+  <!-- animation: change 2s infinite; -->
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 @keyframes change{ 
@@ -106,17 +109,23 @@ i:not( :hover ){
     100% { transform: rotate(360deg);}
 }
 
-body {
+html {
+	margin: 0;
 	width: 50wh;
-	height: 50vh;
+	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	background: linear-gradient(45deg, #00cc7a, #1a75ff, #00cc7a);
 	background-size: 500% 500%;
-	-webkit-animation: gradient 18s ease-in-out infinite;
-	-moz-animation: gradient 18s ease-in-out infinite;
-	animation: gradient 18s ease-in-out infinite;
+	-webkit-animation: gradient 15s ease-in-out infinite;
+	-moz-animation: gradient 15s ease-in-out infinite;
+	animation: gradient 15s ease-in-out infinite;
 }
+
+body {
+	background-color: transparent;
+}
+
 
 @-webkit-keyframes gradient {
 	0% {
@@ -155,4 +164,3 @@ body {
 	}
 
 }
-
